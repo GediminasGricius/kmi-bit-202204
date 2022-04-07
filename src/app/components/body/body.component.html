@@ -24,13 +24,13 @@
             </div>
             <div class="card-body">
                 <div *ngIf="kmi!=0" class="alert" [ngClass]="{'alert-success':kmi<25, 'alert-info':(kmi>=25 && kmi<30),'alert-danger':kmi>=30}">
-                    {{info}}: <strong  >{{ kmi }}</strong>
+                    {{info}} <br>
+                    
+                    KMI: <strong  >{{ kmi }}</strong>
                 </div>
                 
-                
-                
                 <div *ngIf="kmi==0">
-                Iveskite svori ir paspauskite skaičiuoti
+                    Iveskite svori ir paspauskite skaičiuoti
                 </div>
             </div>
         </div>
